@@ -120,7 +120,7 @@ const (
 //
 // height float64 — user height in m.
 func WalkingSpentCalories(action int, duration, weight, height float64) float64 {
-	return ((walkingCaloriesWeightMultiplier*weight + (math.Pow(meanSpeed(action, duration)*kmhInMsec, 2)/(height/100))*0.029*weight) * duration * minInH)
+	return ((walkingCaloriesWeightMultiplier*weight + (math.Pow(meanSpeed(action, duration)*kmhInMsec, 2)/(height/cmInM))*walkingSpeedHeightMultiplier*weight) * duration * minInH)
 }
 
 // Constants for calculating calories expended during swimming.
