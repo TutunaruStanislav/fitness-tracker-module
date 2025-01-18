@@ -1,3 +1,3 @@
-module github.com/Yandex-Practicum/go-first-floor-sprint-four
+module github.com/TutunaruStanislav/fitness-tracker-module
 
 go 1.20
